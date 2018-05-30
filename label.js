@@ -24,7 +24,7 @@ export default class Label extends Component {
     const { text, style, numberOfLines, textProps } = this.props;
     if (text !== null && text.length > 0) {
       return (
-        <Text {...textProps} style={style} numberOfLines={numberOfLines}>
+        <Text {...textProps} style={style} numberOfLines={numberOfLines} allowFontScaling={false}>
           {text}
         </Text>
       );
